@@ -29,8 +29,8 @@ while game_is_on:
         snake.extend()
 
     if snake.head.xcor() > 280 or snake.head.xcor()< -280 or snake.head.ycor() > 280 or snake.head.ycor()< -280 or snake.crash():
-        game_is_on = False
-        score.game_over()
+        snake.reset()
+        score.reset()
 
 
 
